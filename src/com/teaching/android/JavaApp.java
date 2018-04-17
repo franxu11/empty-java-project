@@ -6,7 +6,17 @@ package com.teaching.android;
 public class JavaApp {
 
     public static void main(String[] args) {
-        byte b = 65; //8 bits
+
+
+        //EJERCICIO 2
+        System.out.println(2+5-3*2);
+        System.out.println(2*4*2/2);
+        System.out.println(1/2);
+        System.out.println(5*(1/2));
+        System.out.println(5f*1/2);
+
+        //EJERCICIO 1
+        /* byte b = 65; //8 bits
         char c = 'A'; //16 bits
         short s = 65; // 16 bits
         int i = 65; // 32 bits
@@ -15,6 +25,7 @@ public class JavaApp {
         double d = 65.55; //64 bits
         boolean bol = true; // 1 bit
 
+
         System.out.println(b);
         System.out.println(c);
         System.out.println(s);
@@ -22,7 +33,7 @@ public class JavaApp {
         System.out.println(l);
         System.out.println(f);
         System.out.println(d);
-        System.out.println(bol);
+        System.out.println(bol);*/
 
     }
 
