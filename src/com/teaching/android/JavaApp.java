@@ -1,5 +1,7 @@
 package com.teaching.android;
 
+import java.util.Scanner;
+
 /**
  * Empty Java App for teaching purposes.
  */
@@ -8,6 +10,21 @@ public class JavaApp {
     public static void main(String[] args) {
 
 
+        //EJERCICIO 3
+
+        System.out.println("Escribe un número: ");
+        Scanner keyboard = new Scanner(System.in);
+        int valor = keyboard.nextInt();
+
+        if (valor % 2 == 0) {
+            System.out.println("Es par");
+        }
+        else {
+            System.out.println("Es impar");
+        }
+
+
+        /*
         //EJERCICIO 2
         System.out.println(2+5-3*2);
         System.out.println(2*4*2/2);
@@ -16,7 +33,7 @@ public class JavaApp {
         System.out.println(5f*1/2);
 
         //EJERCICIO 1
-        /* byte b = 65; //8 bits
+        byte b = 65; //8 bits
         char c = 'A'; //16 bits
         short s = 65; // 16 bits
         int i = 65; // 32 bits
