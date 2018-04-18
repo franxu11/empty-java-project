@@ -1,6 +1,8 @@
 package com.teaching.android;
 
+import java.util.Random;
 import java.util.Scanner;
+
 
 /**
  * Empty Java App for teaching purposes.
@@ -9,9 +11,64 @@ public class JavaApp {
 
     public static void main(String[] args) {
 
+        //FOR ANIDADOS
 
+
+
+        //EJERCICIO 5 IMPRIMIR LOS 20 NUMEROS IMPARES
+        /*
+        for (int i = 1; i < 20; i = i + 2) {
+            System.out.println(i);
+        }
+        */
+
+        //EJERCICIO 4 Adivinar un numero comprendido entre 1-10 con 3 intentos.
+        // Create a random number between 1 and 10
+
+        //Otra manera:
+
+        
+
+        //Una manera:
+        Random generator = new Random();
+        int random = generator.nextInt(10) + 1;
+
+
+        System.out.print("Estoy pensando en un número del 1 al 10. Puedes adivinarlo?");
+
+        Scanner keyboard = new Scanner(System.in);
+        int valor = keyboard.nextInt();
+
+
+        if (valor == random) {
+            System.out.print("Correcto!");
+            System.exit(0);
+        } else if (valor > random) {
+            System.out.println("Más pequeño! Prueba otra vez:");
+        } else {
+            System.out.println("Más alto! Prueba otra vez:");
+        }
+
+        valor = keyboard.nextInt();
+        if (valor == random) {
+            System.out.println("Correcto!");
+            System.exit(0);
+        } else if (valor > random) {
+            System.out.println("Más pequeño! Prueba otra vez:");
+        } else {
+            System.out.println("Más alto! Prueba otra vez:");
+        }
+
+        valor = keyboard.nextInt();
+        if (valor == random) {
+            System.out.println("Correcto!");
+            System.exit(0);
+        }
+
+        System.out.println("Has perdido, el número correcto es " + random);
+    }
         //EJERCICIO 3
-
+        /*
         System.out.println("Escribe un número: ");
         Scanner keyboard = new Scanner(System.in);
         int valor = keyboard.nextInt();
@@ -24,7 +81,7 @@ public class JavaApp {
         }
 
 
-        /*
+
         //EJERCICIO 2
         System.out.println(2+5-3*2);
         System.out.println(2*4*2/2);
@@ -54,4 +111,4 @@ public class JavaApp {
 
     }
 
-}
+
