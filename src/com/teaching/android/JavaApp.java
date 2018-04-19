@@ -11,9 +11,15 @@ public class JavaApp {
 
     public static void main(String[] args) {
 
-        //FOR ANIDADOS
+        /************************************************/
 
-
+        Persona p1 = new Persona("Paco", 100.4f);
+        Persona p2 = new Persona("Pepe", 500);
+        System.out.println("Paco tiene " + p2.getDinero());
+        System.out.println("Pepe tiene " + p1.getDinero());
+        p1.pagar(p2, 35);
+        System.out.println("Paco tiene " + p2.getDinero());
+        System.out.println("Pepe tiene " + p1.getDinero());
 
         //EJERCICIO 5 IMPRIMIR LOS 20 NUMEROS IMPARES
         /*
@@ -25,13 +31,11 @@ public class JavaApp {
         //EJERCICIO 4 Adivinar un numero comprendido entre 1-10 con 3 intentos.
         // Create a random number between 1 and 10
 
-        //Otra manera:
+        //2 maneras:
+        /*Random generator = new Random();
 
-        
-
-        //Una manera:
-        Random generator = new Random();
         int random = generator.nextInt(10) + 1;
+
 
 
         System.out.print("Estoy pensando en un número del 1 al 10. Puedes adivinarlo?");
@@ -39,7 +43,24 @@ public class JavaApp {
         Scanner keyboard = new Scanner(System.in);
         int valor = keyboard.nextInt();
 
+        for (int i = 0; i<3; i++) {
+            int valor = keyboard.nextInt();
 
+            if (valor == random) {
+                System.out.print("Correcto!");
+                System.exit(0);
+            }
+            if (i<2) {
+                if (valor > random) {
+                    System.out.println("Mas pequeño, prueba otra vez!");
+                } else {
+                    System.out.println("Mas alto, prueba otra vez!");
+                }
+            }
+        }
+        System.out.println("Has perdido, el número correcto es " + random);
+        //Comento para que se vea como hacerlo con un for
+        /*
         if (valor == random) {
             System.out.print("Correcto!");
             System.exit(0);
@@ -110,5 +131,6 @@ public class JavaApp {
         System.out.println(bol);*/
 
     }
+}
 
 
