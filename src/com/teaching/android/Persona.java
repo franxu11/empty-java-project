@@ -13,15 +13,17 @@ public class Persona { // *1
         System.out.println("Creada persona con nombre: " + nombre + " y dinero: " + dinero);
     }
 
+    //Método
     public void pagar(Persona p, float cantidad) {
 
         this.dinero = this.dinero + cantidad;
         p.dinero = p.dinero - cantidad;
     }
-
+    //Método
     public float getDinero() {
         return dinero;
     }
+
 }
 
 /********************************************************/

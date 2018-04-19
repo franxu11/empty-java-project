@@ -13,6 +13,18 @@ public class JavaApp {
 
         /************************************************/
 
+        Punto p1 = new Punto(2,4);
+        Punto p2 = new Punto(3,5);
+        double distancia = p1.distancia(3,5);
+        System.out.println("La distancia entre los dos puntos es: " + distancia);
+        double distancia2 = p1.distancia(p2);
+        System.out.println("La distancia entre los dos puntos es: " + distancia);
+        System.out.println(p1);
+        System.out.println(p2);
+
+
+        //EJERCICIO RELACIONADO CON EL FICHERO Persona.java
+        /*
         Persona p1 = new Persona("Paco", 100.4f);
         Persona p2 = new Persona("Pepe", 500);
         System.out.println("Paco tiene " + p2.getDinero());
@@ -20,6 +32,8 @@ public class JavaApp {
         p1.pagar(p2, 35);
         System.out.println("Paco tiene " + p2.getDinero());
         System.out.println("Pepe tiene " + p1.getDinero());
+        */
+
 
         //EJERCICIO 5 IMPRIMIR LOS 20 NUMEROS IMPARES
         /*
