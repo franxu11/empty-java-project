@@ -13,6 +13,44 @@ public class JavaApp {
 
         /************************************************/
 
+        //EJERCICIO RELACIONADO CON EL FICHERO Matriz.java Interesante revisar.
+        Matriz m = new Matriz(3);
+        Matriz n = new Matriz(3);
+
+        int[] vector = {3, 2, 1, 1, 2, 3, 2, 3, 1};
+        m.asignarDatos(vector);
+
+        m.asignarDatos(new int[] {3, 2, 1, 1, 2, 3, 2, 3, 1});
+
+        int[] vector2 = {1, 1, 2, 2, 1, 1, 1, 2, 1};
+        n.asignarDatos(vector2);
+
+        m.mostrar();
+        n.mostrar();
+
+        m.producto(n);
+        m.mostrar();
+
+        m.suma(n);
+        m.mostrar();
+
+
+
+
+/*
+        //EJERCICIO RELACIONADO CON EL FICHERO Circulo.java
+        Punto centro = new Punto(2,4);
+        Circulo c = new Circulo(2,3,5);
+        Circulo c2 = new Circulo(centro, 5);
+        System.out.println("Area de c es: " + c.getArea());
+        System.out.println("Area de c2 es: " + c2.getArea());
+        double area = c.getArea();
+        double circunferencia = c.getCircunferencia();
+        System.out.println("El resultado del área es: " + area);
+        System.out.println("El resultado de la circunferencia es: " + circunferencia);
+*/
+/*
+        //EJERCICIO RELACIONADO CON EL FICHERO Punto.java
         Punto p1 = new Punto(2,4);
         Punto p2 = new Punto(3,5);
         double distancia = p1.distancia(3,5);
